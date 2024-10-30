@@ -1965,3 +1965,64 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+.blog_post {
+    /* Container styles */
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 48px 24px;
+}
+
+.blog_post h1 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 24px;
+    line-height: 1.3;
+}
+
+.blog_post .date {
+    color: #888888;
+    font-size: 14px;
+    margin-bottom: 32px;
+}
+
+.blog_post p {
+    color: #D1D1D1;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Links within blog post */
+.blog_post a {
+    color: #D1D1D1;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+
+.blog_post a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .blog_post {
+        padding: 24px 16px;
+    }
+
+    .blog_post h1 {
+        font-size: 22px;
+    }
+
+    .blog_post p {
+        font-size: 15px;
+    }
+}
+
+/* Optional: Add if you want to ensure proper spacing at the bottom of the last paragraph */
+.blog_post p:last-child {
+    margin-bottom: 0;
+}
